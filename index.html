@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saumya Behera | GCP Data Engineer</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="flags.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <script>
+    function openQRModal() {
+      document.getElementById("qrModal").style.display = "flex";
+    }
+    function closeQRModal() {
+      document.getElementById("qrModal").style.display = "none";
+    }
+    window.onclick = function (event) {
+      const modal = document.getElementById("qrModal");
+      if (event.target === modal) {
+        closeQRModal();
+      }
+    };
+  </script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="assets/saumya_resume.pdf" class="resume-button" target="_blank">Resume</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="section">
+    <p>Hi there <span class="wave-hand">👋</span>, I'm</p>
+    <h1>Saumya Behera</h1>
+    <h2>GCP Data Engineer | Cloud Migration & Analytics Expert</h2>
+    <p>I'm a Data Engineer with 4 years of expertise in developing, migrating, and optimizing data pipelines on Google Cloud Platform. I love working with BigQuery, DataProc, and Airflow to transform raw data into meaningful insights.</p>
+    <p>📍 India</p>
+    <a class="get-in-touch-button" href="#contact">Get in Touch</a>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="section-title"><h2>💼 Skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>⚡️ Cloud Platform</h3>
+        <ul>
+          <li>Google Cloud Platform (GCP)</li>
+          <li>BigQuery, Cloud Storage (GCS)</li>
+          <li>Cloud Composer (Airflow)</li>
+          <li>Dataflow (Apache Beam)</li>
+          <li>Dataproc (Batch Spark jobs)</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>🔁 Batch Data Pipelines</h3>
+        <ul>
+          <li>ETL/ELT using Dataflow, dbt, and Python</li>
+          <li>Apache Airflow (Cloud Composer)</li>
+          <li>Scheduled batch workflows</li>
+          <li>File-based ingestion from GCS</li>
+          <li>BigQuery transformation & validation</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>🧰 Tools & Technologies</h3>
+        <ul>
+          <li>Apache Airflow, dbt</li>
+          <li>Python (ETL scripting, GCP SDKs)</li>
+          <li>BigQuery Standard SQL</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>🧠 Data Engineering Concepts</h3>
+        <ul>
+          <li>Star & Snowflake schemas</li>
+          <li>SCD (Slowly Changing Dimensions)</li>
+          <li>Batch job optimization</li>
+          <li>Schema enforcement & alerting</li>
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>📊 Additional</h3>
+        <ul>
+          <li>Data Analysis</li>
+          <li>Power BI</li>
+          <li>Tableau</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & EDUCATION -->
+  <section class="bio-section">
+    <div class="bio-content">
+      <section id="about" class="dark-card">
+        <h2>About</h2>
+        <p>I’m a GCP Data Engineer with hands-on experience building scalable, cloud-native data solutions. I've worked with tools like BigQuery, Cloud DataProc, and Airflow to orchestrate, migrate, and optimize pipelines across diverse projects. My goal is to drive business growth through reliable and cost-efficient data systems.</p>
+      </section>
+      <section id="education" class="dark-card">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Tech</strong> – Government College of Engineering Keonjhar (2017 – 2021)</li>
+        </ul>
+        <h3 style="margin-top: 1.5rem; color: #00cfff;">📜 Publications / Certifications</h3>
+        <ul style="padding-left: 1.2rem; color: #ccc;">
+          <li><strong>Certificate of Publication</strong> – Journal of Xi’an University of Architecture & Technology (Scopus Indexed)</li>
+          <li><strong>Title:</strong> Application of DE Optimization Algorithm based Automatic Generation Control of Interconnected Multi Area Power System</li>
+          <li><strong>Author:</strong> Saumya Narayan Behera</li>
+          <li><strong>Published In:</strong> JXAT Journal, Volume XIII, Issue V, May 2021</li>
+          <li><strong>Institute:</strong> Govt. College of Engineering, Dept. of Electrical Engineering, Keonjhar, Odisha, India</li>
+          <li><strong>Certificate ID:</strong> JXAT/7651</li>
+          <li><strong>ISSN:</strong> 1006-7930 | <strong>Impact Factor:</strong> 3.7</li>
+        </ul>
+      </section>
+    </div>
+    <div class="bio-avatar">
+      <img src="assets/avatar.jpg" alt="Saumya Narayan Behera" />
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-title"><h2>Projects</h2><hr /></div>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>NHS UK Data Migration to Cloud</h3>
+        <p>Developed batch pipelines using GCS, BigQuery, and DataProc. Optimized performance, partitioning, and secure access with IAM. Orchestrated end-to-end workflows using Cloud Composer (Airflow).</p>
+      </div>
+      <div class="project-card">
+        <h3>E-commerce Analytics Platform</h3>
+        <p>Built scalable data pipelines for Trend Cart using Cloud Composer and BigQuery. Designed cost-effective ETL workflows, reducing BigQuery scan costs by 35% and enabled real-time analytics for transactional data.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="dark-card">
+    <h2>Contact</h2>
+    <ul class="contact-info">
+      <li><strong>📞 Phone:</strong> +91 8917443112</li>
+      <li><strong>📧 Email:</strong> <a href="mailto:saumya.behera.cloud@gmail.com">saumya.behera.cloud@gmail.com</a></li>
+      <li><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/saumya-behera/" target="_blank">linkedin.com/in/saumya-behera</a></li>
+    </ul>
+  </section>
+
+  <!-- APPOINTMENT -->
+  <section id="appointment" class="section">
+    <div class="section-title">
+      <h2><span class="icon">🗓️</span> Book an Appointment</h2>
+    </div>
+    <div class="appointment-container">
+      <div class="appointment-card" onclick="openQRModal()">
+        <h3><span class="icon">☑️</span> 15 min Session</h3>
+        <p class="price">₹99</p>
+      </div>
+      <div class="appointment-card" onclick="openQRModal()">
+        <h3><span class="icon">☑️</span> 45 min Session</h3>
+        <p class="price">₹199</p>
+      </div>
+    </div>
+    <div class="appointment-note">
+      <p><span class="icon">💬</span> Want a different slot or custom help?</p>
+      <a class="appointment-link" href="https://www.linkedin.com/in/saumya-behera/" target="_blank">DM me on LinkedIn</a>
+    </div>
+  </section>
+
+<!-- QR MODAL -->
+<div id="qrModal" class="qr-modal">
+  <div class="qr-modal-content">
+    <span class="close-btn" onclick="closeQRModal()">×</span>
+    <h3>Scan to Pay</h3>
+    <img src="assets/saumya-pay.jpg" alt="QR Code" class="qr-image" />
+    <p>Use any UPI app to scan & pay.</p>
+    <p><strong>📩 Send me your payment transaction ID.</strong></p>
+    <p><strong>✅ After completing the payment, just DM me on LinkedIn</a>.</strong></p>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr />
+    <div style="color: #000; font-weight: bold; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 5px; display: inline-block;">
+      © 2025 Saumya Narayan Behera<br />GCP Data Engineer | Building Cloud Solutions with Impact ☁️
+    </div>
+  </footer>
+</body>
+</html>

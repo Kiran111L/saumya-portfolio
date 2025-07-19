@@ -1,0 +1,150 @@
+/* animation.css */
+/* ===== CORE ANIMATIONS ===== */
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 151px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 36px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    filter: drop-shadow(0 0 5px #0ff);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #0ff);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #0ff);
+  }
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* ===== ANIMATION ELEMENTS ===== */
+/* Success Animation */
+#successAnimationCircle {
+  stroke-dasharray: 151px 151px;
+  stroke: #00ffff;
+}
+
+#successAnimationCheck {
+  stroke-dasharray: 36px 36px;
+  stroke: #00ff88;
+}
+
+#successAnimationResult {
+  fill: #fff;
+  opacity: 0;
+}
+
+#successAnimation.animated {
+  animation: scaleAnimation 1s ease-out 1.2s 1 both, 
+             pulseGlow 2s ease-in-out infinite;
+}
+
+#successAnimation.animated #successAnimationCircle {
+  animation: drawCircle 1s cubic-bezier(.77, 0, .175, 1) 1.2s 1 both,
+             fadeOut 0.3s linear 2.1s 1 both;
+}
+
+#successAnimation.animated #successAnimationCheck {
+  animation: drawCheck 1s cubic-bezier(.77, 0, .175, 1) 1.2s 1 both,
+             fadeOut 0.3s linear 2.1s 1 both;
+}
+
+#successAnimation.animated #successAnimationResult {
+  animation: fadeIn 0.3s linear 2.1s both;
+}
+
+/* Wave Hand Animation */
+.wave-hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+/* Interactive Element Animations */
+.contact-info a {
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #00d8ff;
+  transform: translateX(3px);
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Loading Animation (Optional) */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  border-top-color: #00ffff;
+  width: 24px;
+  height: 24px;
+}
